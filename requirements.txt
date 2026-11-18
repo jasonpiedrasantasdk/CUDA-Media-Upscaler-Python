@@ -1,0 +1,27 @@
+# CUDA Media Upscaler requirements
+#
+# Install the CPU dependencies:
+#   pip install -r requirements.txt
+#
+# The app runs on the CPU without CuPy. Install GPU acceleration separately,
+# matching the package to your CUDA toolkit:
+#   CUDA 12.x / 13.x:  pip install cupy-cuda12x
+#   CUDA 11.x:         pip install cupy-cuda11x
+#   Check with:        nvcc --version
+
+# Core dependencies (required)
+numpy>=2.0.0
+Pillow>=9.1.0
+scipy>=1.7.0
+
+# Optional GPU acceleration (install manually, see above)
+# cupy-cuda12x>=14.0.0
+
+# System dependencies (install via apt)
+# - ffmpeg + ffprobe: video and GIF processing (required for those tabs)
+#     sudo apt install ffmpeg
+# - gifsicle: GIF optimization (optional)
+#     sudo apt install gifsicle
+# - zenity (GNOME/Wayland) or kdialog (KDE): native file dialogs (optional)
+#     sudo apt install zenity
+#     sudo apt install kdialog
