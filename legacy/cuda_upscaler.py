@@ -450,9 +450,10 @@ class UpscalerApp:
                     self._draw_preview(use_result=True),
                 ])
             except Exception as e:
+                message = str(e)
                 self.root.after(0, lambda: [
                     self.progress.stop(),
-                    self.status_var.set(f"Error: {e}"),
+                    self.status_var.set(f"Error: {message}"),
                 ])
 
         threading.Thread(target=_worker, daemon=True).start()

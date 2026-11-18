@@ -1,6 +1,6 @@
 # CUDA Media Upscaler (Python)
 
-[![CI](https://github.com/jasonpiedrasantasdk/cuda-media-upscaler-py/actions/workflows/ci.yml/badge.svg)](https://github.com/jasonpiedrasantasdk/cuda-media-upscaler-py/actions/workflows/ci.yml)
+[![CI](https://github.com/jasonpiedrasantasdk/CUDA-Media-Upscaler-Python-/actions/workflows/ci.yml/badge.svg)](https://github.com/jasonpiedrasantasdk/CUDA-Media-Upscaler-Python-/actions/workflows/ci.yml)
 
 A Tkinter desktop application for upscaling images, videos and GIFs with CuPy
 on the GPU and a SciPy CPU fallback. This is the Python implementation of the
